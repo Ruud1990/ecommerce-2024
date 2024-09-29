@@ -14,7 +14,8 @@ export default async function handler(req, res) {
           allowed_countries: ['PL'],
         },
             shipping_options: [
-          { shipping_rate: 'shr_1POlw8EYWs5KjxdwBIIpmiO6' },
+          { shipping_rate: 'shr_1Q4TNTEYWs5Kjxdwju9PNQrC' },
+          { shipping_rate: 'shr_1Q4TObEYWs5Kjxdwb6NrTNzA' },
         ],
         line_items: req.body.map((item) => {
             const img = item.image[0].asset._ref;
