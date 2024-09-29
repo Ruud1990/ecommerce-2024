@@ -3,9 +3,8 @@ import Link from 'next/link';
 import { BsBagXFill  } from 'react-icons/bs';
 
 import { useStateContext } from '../context/StateContext';
-import { runFireworks } from '../lib/utils';
 
-const success = () => {
+const canceled = () => {
     const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
     
     useEffect(() => {
@@ -13,7 +12,6 @@ const success = () => {
         setCartItems([]);
         setTotalPrice(0);
         setTotalQuantities(0);
-        runFireworks();
     }, []);
 
   return (
@@ -40,4 +38,4 @@ const success = () => {
   )
 }
 
-export default success
+export default canceled

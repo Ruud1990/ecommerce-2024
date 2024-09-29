@@ -9,13 +9,18 @@ export default async function handler(req, res) {
             submit_type: 'pay',
             mode: 'payment',
             payment_method_types: ['card'],
-            billing_address_collection: 'auto',
+            billing_address_collection: 'required',
+             shipping_address_collection: {
+          allowed_countries: ['PL'],
+        },
             shipping_options: [
-          { shipping_rate: 'shr_1PSlSuEYWs5KjxdwhzaJKDhZ' },
+          { shipping_rate: 'shr_1POlw8EYWs5KjxdwBIIpmiO6' },
         ],
         line_items: req.body.map((item) => {
             const img = item.image[0].asset._ref;
             const newImage = img.replace('image-', 'https://cdn.sanity.io/images/kjjx92zy/production/').replace('-webp', '.webp');
+
+             console.log('Generated Image URL:', newImage);
             
             return {
             price_data: { 
@@ -34,6 +39,26 @@ export default async function handler(req, res) {
           }
         }),
         mode: 'payment',
+        invoice_creation: {
+            enabled: true },
+        custom_fields: [
+          {
+           key: 'telephone',
+           label: { type: 'custom', custom: 'Nr telefonu'},
+           type: 'text',
+       },
+          {
+            key: 'company',
+            label: { type: 'custom', custom: 'Miejsce na Twoją dedykację'},
+            type: 'text',
+        },
+    {
+            key: 'adres',
+            label: { type: 'custom', custom: 'Adres paczkomatu'},
+            type: 'text',
+            optional: true,
+        },
+    ],
         success_url: `${req.headers.origin}/success`,
         cancel_url: `${req.headers.origin}/canceled`,
         automatic_tax: {enabled: true},
