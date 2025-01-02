@@ -6,7 +6,7 @@ import { urlFor } from '../lib/client';
 const HeroBanner = ({ heroBanner }) => {
   return (
     <div className="hero-banner-container">
-      <div>
+      <div className="hero-second">
         <p className="beats-solo">Wyjątkowe prezenty</p>
         <h3>Wypakuj</h3>
         <h1>mnie</h1>
@@ -16,7 +16,7 @@ const HeroBanner = ({ heroBanner }) => {
             <button type="button">Nasze produkty</button>
           </Link>
           <div className="desc">
-            <h5>Description</h5>
+            <h5>Prezent</h5>
             <p>{heroBanner.desc}</p>
           </div>
         </div>
