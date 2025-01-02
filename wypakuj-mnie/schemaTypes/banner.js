@@ -48,15 +48,5 @@ export const banner = defineType({
           title: 'LargeText2',
           type: 'string',
       },
-      {
-          name: 'discount',
-          title: 'Discount',
-          type: 'string',
-      },
-      defineField({
-          name: 'saleTime',
-          title: 'SaleTime',
-          type: 'string',
-      }),
   ],
 });
