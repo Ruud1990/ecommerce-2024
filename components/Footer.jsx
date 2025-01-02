@@ -11,6 +11,7 @@ const Footer = () => {
         <AiOutlineTwitter />
       </p>
       <Link href="/privacy">RODO</Link>
+      <Link href="/rules">Regulamin</Link>
     </div>
   )
 }
