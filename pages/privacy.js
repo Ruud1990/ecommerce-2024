@@ -8,6 +8,7 @@ const privacy = () => {
   return (
     <div className="success-wrapper">
       <div className="success">
+      <h2>Polityka Prywatności</h2>
         <ol>
         <li>Administratorem danych osobowych przekazanych przez Kupującego podczas korzystania ze sklepu jest Wypakuj mnie Marta Blicharska 59-220, Legnica, ul. Chrobrego 6/3.</li>
         <li>Celem przetwarzania danych Klienta przez Sklep, podanych przez Klienta w związku z zakupami, jest realizacja zamówień. Podstawą przetwarzania danych osobowych w tym przypadku jest:
