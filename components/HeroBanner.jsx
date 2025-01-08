@@ -8,16 +8,16 @@ const HeroBanner = ({ heroBanner }) => {
     <div className="hero-banner-container">
       <div className="hero-second">
         <p className="beats-solo">Wyjątkowe prezenty</p>
-        <h3>Wypakuj</h3>
-        <h1>mnie</h1>
+        <h1>Wypakuj</h1>
+        <h3>mnie</h3>
         <img src={urlFor(heroBanner.image)} alt="headphones" className="hero-banner-image" />
         <div>
           <Link href='/produkty'>
             <button type="button">Nasze produkty</button>
           </Link>
           <div className="desc">
-            <h5>Prezent</h5>
-            <p>{heroBanner.desc}</p>
+            <h5>personalizowane, kreatywne</h5>
+            <p>na każdą okazję</p>
           </div>
         </div>
       </div>
