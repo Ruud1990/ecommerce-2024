@@ -66,9 +66,9 @@ width: 100%;
     margin-left: 6px;
 }
 .logo{
-  color: gray;
-  font-size: 18px;
-
+  width: 300px;
+  height: 100px;
+  border-radius: 5px;
 }
 .cart-icon{
   font-size: 25px;
@@ -693,7 +693,11 @@ margin-top: 160px;
  }
 
 @media screen and (max-width:800px) {
-  
+  .logo{
+  width: 250px;
+  height: 80px;
+  border-radius: 5px;
+}
  
   .footer-banner-container {
     height: auto;
@@ -825,7 +829,7 @@ margin-top: 160px;
   padding: 20px;
 }
 .success{
-  height: 350px;
+  height: auto;
 }
 .success h2{
   font-size: 17px;
@@ -861,6 +865,11 @@ margin-top: 160px;
     gap: 20px;
   }
  @media screen and (max-width: 426px) {
+  .logo{
+  width: 180px;
+  height: 60px;
+  border-radius: 5px;
+}
   .beats-solo {
     display: none;
   }
