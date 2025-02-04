@@ -2,8 +2,9 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="pl">
       <Head>
+      <link rel="icon" href="/ecommerce-store/public/favicon.ico" />
         <meta name="description" content="Personalizowane upominki z drewna grawerowane i cięte laserem. Znajdź idealny prezent dla bliskiej osoby!" />
 <meta name="robots" content="index, follow" />
 <meta property="og:title" content="Wypakuj Mnie - Personalizowane Upominki" />
