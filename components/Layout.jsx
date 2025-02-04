@@ -8,7 +8,8 @@ const Layout = ({ children }) => {
   return (
     <div className="layout">
       <Head>
-        <title>Wypakuj Mnie - wyjątkowe prezenty na każdą okazję</title>
+        <title>Wypakuj Mnie - personalizowane prezenty na każdą okazję</title>
+        <link rel="icon" href="/ecommerce-store/public/favicon.ico" />
       </Head>
       <header>
         <Navbar />
