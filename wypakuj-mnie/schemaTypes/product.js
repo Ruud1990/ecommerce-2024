@@ -19,6 +19,11 @@ export const product  = defineType({
       type: 'string',
     },
     { 
+      name: 'alt',
+      title: 'Alt',
+      type: 'string',
+    },
+    { 
       name: 'slug',
       title: 'Slug',
       type: 'slug',
