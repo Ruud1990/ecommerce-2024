@@ -1,0 +1,10 @@
+# Blokowanie niechcianych stron
+User-agent: *
+Disallow: /success
+Disallow: /canceled
+
+# Zezwolenie na indeksowanie reszty
+Allow: /
+
+# Mapa witryny
+Sitemap: https://wypakuj-mnie.pl/sitemap.xml
