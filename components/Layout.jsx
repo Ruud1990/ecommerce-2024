@@ -9,7 +9,12 @@ const Layout = ({ children }) => {
     <div className="layout">
       <Head>
         <title>Wypakuj Mnie - personalizowane prezenty na każdą okazję</title>
-        <link rel="icon" sizes="32" type="image/ico" href="/ecommerce-store/public/favicon.ico" />
+        <meta name="description" content="Personalizowane upominki z drewna grawerowane i cięte laserem. Znajdź idealny prezent dla bliskiej osoby!" />
+        <meta property="og:title" content="Wypakuj Mnie - Personalizowane Upominki" />
+        <meta property="og:description" content="Unikalne prezenty z drewna na każdą okazję - chrzest, urodziny, ślub i wiele więcej." />
+        <meta property="og:url" content="https://wypakuj-mnie.pl" />
+        <meta property="og:type" content="website" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
         <Navbar />
@@ -21,7 +26,7 @@ const Layout = ({ children }) => {
         <Footer />
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
